@@ -17,11 +17,6 @@ const demoLinks = [
         to       : '/colors',
         component: require('./views/colors').Colors,
       },
-      {
-        display  : 'Variables',
-        to       : '/variables',
-        component: require('./views/variables').Variables,
-      },
     ],
   },
 ]
