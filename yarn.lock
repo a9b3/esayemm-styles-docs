@@ -4599,9 +4599,9 @@ klaw@^1.0.0:
   optionalDependencies:
     graceful-fs "^4.1.9"
 
-kontinuum-route53@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/kontinuum-route53/-/kontinuum-route53-0.1.3.tgz#e5f74ea81ad887ed41e89f600f154f025e051644"
+kontinuum-route53@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/kontinuum-route53/-/kontinuum-route53-0.1.4.tgz#812bb5f1d349de22bf3e4b87d70ef3e3b6e95219"
 
 kontinuum-s3-deploy@^0.1.3:
   version "0.1.3"
