@@ -7,7 +7,9 @@
     "eslint": "^4.5.0",
     "eslint-config-esayemm": "^2.0.9",
     "eslint-plugin-react": "^7.2.1",
-    "jbs-fe": "^0.0.32"
+    "jbs-fe": "^0.0.32",
+    "kontinuum-route53": "^0.1.3",
+    "kontinuum-s3-deploy": "^0.1.3"
   },
   "scripts": {
     "lint": "./node_modules/eslint/bin/eslint.js .",
@@ -15,7 +17,9 @@
     "start": "PORT=5011 BABEL_REACT=true NODE_PATH=./src ./node_modules/jbs-fe/bin.js dev",
     "test": "BABEL_REACT=true NODE_PATH=./src ./node_modules/jbs-fe/bin.js test --single-run",
     "test:watch": "BABEL_REACT=true NODE_PATH=./src ./node_modules/jbs-fe/bin.js test",
-    "deploy": "npm run build && echo add deployment script here"
+    "deploy:s3": "./node_modules/kontinuum-s3-deploy/script.sh --name styles.esayemm.com --is-index ./build",
+		"deploy:route53": "./node_modules/kontinuum-route53/script.sh --name styles.esayemm.com --root esayemm.com",
+		"deploy": "npm run deploy:s3 && npm run deploy:route53"
   },
   "dependencies": {
     "esayemm-styles": "^2.2.2",
