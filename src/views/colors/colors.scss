@@ -1,0 +1,55 @@
+@import '~esayemm-styles';
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: $spacing2;
+
+  &__header {
+    margin-bottom: $spacing3;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.colors {
+  padding: $spacing3;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    margin-bottom: $spacing3;
+    text-transform: capitalize;
+  }
+
+  &__palettes {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.color {
+  display: grid;
+  grid-template-areas:
+  "palette"
+  "info";
+
+  &__palette {
+    grid-area: palette;
+    width: 70px;
+    height: 70px;
+  }
+
+  &__info {
+    grid-area: info;
+
+    li {
+      margin-top: $spacing6;
+      font-size: smaller;
+    }
+  }
+}

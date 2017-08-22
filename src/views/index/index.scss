@@ -1,3 +1,13 @@
+@import '~esayemm-styles';
+
 .index {
-  background: black;
+  background: transparent;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $spacing2;
+
+  h3 {
+    margin-bottom: $spacing3;
+  }
 }

@@ -4336,9 +4336,9 @@ jbs-base-babel@^0.0.2:
     babel-preset-react "^6.24.1"
     babel-preset-stage-0 "^6.24.1"
 
-jbs-fe@^0.0.31:
-  version "0.0.31"
-  resolved "https://registry.yarnpkg.com/jbs-fe/-/jbs-fe-0.0.31.tgz#495b16e10865599739e8d87aab150d27c09fb543"
+jbs-fe@^0.0.32:
+  version "0.0.32"
+  resolved "https://registry.yarnpkg.com/jbs-fe/-/jbs-fe-0.0.32.tgz#ce6d6977b29ca75a901945a15119ec1e4c3c352a"
   dependencies:
     autoprefixer "^7.1.1"
     babel-loader "^7.0.0"
@@ -4370,7 +4370,6 @@ jbs-fe@^0.0.31:
     sinon "2.0.0-pre.3"
     style-loader "^0.18.2"
     svg-sprite-loader "^3.2.4"
-    svgo-loader "^1.2.1"
     sw-precache-webpack-plugin "^0.11.4"
     ts-loader "^2.2.1"
     typescript "^2.4.1"
@@ -4681,7 +4680,7 @@ loader-utils@^0.2.11, loader-utils@^0.2.14, loader-utils@^0.2.16, loader-utils@^
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
-loader-utils@^1.0.1, loader-utils@^1.0.2, loader-utils@^1.0.3, loader-utils@^1.1.0:
+loader-utils@^1.0.1, loader-utils@^1.0.2, loader-utils@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.1.0.tgz#c98aef488bcceda2ffb5e2de646d6a754429f5cd"
   dependencies:
@@ -7463,12 +7462,6 @@ svg2png@~3.0.1:
     pn "^1.0.0"
     yargs "^3.31.0"
 
-svgo-loader@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/svgo-loader/-/svgo-loader-1.2.1.tgz#e255cdebf56753ff83bd28d1d7a20762c0df5130"
-  dependencies:
-    loader-utils "^1.0.3"
-
 svgo@^0.7.0:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/svgo/-/svgo-0.7.2.tgz#9f5772413952135c6fefbf40afe6a4faa88b4bb5"
@@ -7637,7 +7630,7 @@ timers-browserify@^2.0.2:
   dependencies:
     setimmediate "^1.0.4"
 
-tinycolor2@^1.1.2:
+tinycolor2@^1.1.2, tinycolor2@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.1.tgz#f4fad333447bc0b07d4dc8e9209d8f39a8ac77e8"
 

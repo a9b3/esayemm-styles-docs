@@ -7,12 +7,12 @@
     "eslint": "^4.5.0",
     "eslint-config-esayemm": "^2.0.9",
     "eslint-plugin-react": "^7.2.1",
-    "jbs-fe": "^0.0.31"
+    "jbs-fe": "^0.0.32"
   },
   "scripts": {
     "lint": "./node_modules/eslint/bin/eslint.js .",
     "build": "BABEL_REACT=true NODE_PATH=./src ./node_modules/jbs-fe/bin.js build",
-    "start": "BABEL_REACT=true NODE_PATH=./src ./node_modules/jbs-fe/bin.js dev",
+    "start": "PORT=5011 BABEL_REACT=true NODE_PATH=./src ./node_modules/jbs-fe/bin.js dev",
     "test": "BABEL_REACT=true NODE_PATH=./src ./node_modules/jbs-fe/bin.js test --single-run",
     "test:watch": "BABEL_REACT=true NODE_PATH=./src ./node_modules/jbs-fe/bin.js test",
     "deploy": "npm run build && echo add deployment script here"
@@ -29,7 +29,8 @@
     "react-dom": "^15.6.1",
     "react-helmet": "^5.1.3",
     "react-router": "^4.1.2",
-    "react-router-dom": "^4.1.2"
+    "react-router-dom": "^4.1.2",
+    "tinycolor2": "^1.4.1"
   },
   "main": "./build/index.js",
   "babel": {

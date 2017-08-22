@@ -1,0 +1,15 @@
+@import '~esayemm-styles/variables';
+
+.container {
+  width: 100%;
+  max-width: $maxWidth;
+  margin: 0 auto;
+  height: 100%;
+  padding: $spacing2;
+
+  .header {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: $spacing2;
+  }
+}
