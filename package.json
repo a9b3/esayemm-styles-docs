@@ -7,7 +7,7 @@
     "eslint": "^4.5.0",
     "eslint-config-esayemm": "^2.0.9",
     "eslint-plugin-react": "^7.2.1",
-    "jbs-fe": "^0.0.32",
+    "jbs-fe": "^0.0.35",
     "kontinuum-route53": "^0.1.4",
     "kontinuum-s3-deploy": "^0.1.3"
   },

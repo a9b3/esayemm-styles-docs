@@ -1,12 +1,13 @@
-import React      from 'react'
-import styles     from './index.scss'
-import CSSModules from 'react-css-modules'
+import React         from 'react'
+import styles        from './index.scss'
+import CSSModules    from 'react-css-modules'
 
 import {
   Code,
   ClickCopy,
-}                 from 'rui-kit'
-import variables  from 'esayemm-styles/variables'
+}                    from 'rui-kit'
+import variables     from 'esayemm-styles/variables'
+import packageJson   from 'esayemm-styles/package.json'
 import sassVariables from '!!raw-loader!esayemm-styles/variables.scss'
 
 @CSSModules(styles)
@@ -25,6 +26,9 @@ export default class Index extends React.Component {
       </section>
 
       <section>
+        <p>
+        Version: {packageJson.version}
+        </p>
         Javascript variables via esayemm-styles/variables.js
       </section>
 
