@@ -1,34 +1,37 @@
 // react-hot-loader/patch has to be first
 import 'react-hot-loader/patch'
 import 'styles/index.scss'
-import React                    from 'react'
-import { render }               from 'react-dom'
-import { createBrowserHistory } from 'history'
-import { AppContainer }         from 'react-hot-loader'
-import Root                     from './root.js'
 
-const browserHistory = createBrowserHistory()
+import React            from 'react'
+import { render }       from 'react-dom'
+import { AppContainer } from 'react-hot-loader'
 
-function renderRoot(Component) {
+import MainRouter       from './components/MainRouter.js'
+
+function renderRoot() {
   render(
     <AppContainer>
-      <Component history={browserHistory} />
+      <MainRouter />
     </AppContainer>,
-    document.getElementById('mount')
+    document.getElementById('mount'),
   )
 }
 
-renderRoot(Root)
+function main() {
+  renderRoot()
 
-if (module.hot) {
-  module.hot.accept('./styles/index.scss', () => {
-    require('./styles/index.scss')
-  })
-  module.hot.accept(() => {
-    renderRoot(Root)
-  })
+  if (module.hot) {
+    module.hot.accept('styles/index.scss', () => {
+      require('styles/index.scss')
+    })
+    module.hot.accept(() => {
+      renderRoot()
+    })
+  }
+
+  if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+  }
 }
 
-if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
-  navigator.serviceWorker.register('service-worker.js')
-}
+main()

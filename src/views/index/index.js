@@ -17,7 +17,9 @@ export default class Index extends React.Component {
     const importScss = `@import '~esayemm-styles/variables.scss';`
 
     return <div styleName='index'>
-      <h3>Install</h3>
+      <section>
+        <h2>Install</h2>
+      </section>
 
       <section>
         <Code>

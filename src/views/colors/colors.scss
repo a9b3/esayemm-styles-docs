@@ -17,12 +17,11 @@
 }
 
 .colors {
-  padding: $spacing3;
   display: flex;
   flex-direction: column;
 
   &__header {
-    margin-bottom: $spacing3;
+    margin-bottom: $spacing4;
     text-transform: capitalize;
   }
 
@@ -49,7 +48,7 @@
 
     li {
       margin-top: $spacing6;
-      font-size: smaller;
+      font-size: $size6;
     }
   }
 }
