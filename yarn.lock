@@ -2727,11 +2727,12 @@ es6-weak-map@^2.0.1:
     es6-iterator "^2.0.1"
     es6-symbol "^3.1.1"
 
-esayemm-styles@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/esayemm-styles/-/esayemm-styles-2.2.2.tgz#6a7174276ee5fcdaae241c67853d458611f641ae"
+esayemm-styles@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/esayemm-styles/-/esayemm-styles-3.0.0.tgz#e228516ab9d55c5301e3b7d6538d095a7f8b8489"
   dependencies:
     normalize.css "^6.0.0"
+    tinycolor2 "^1.4.1"
 
 escape-html@~1.0.3:
   version "1.0.3"

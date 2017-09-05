@@ -120,19 +120,6 @@ export default class TypeContainer extends React.Component {
           {this.renderInfo('body')}
         </section>
       </div>
-
-      <div styleName='container__demo'>
-        <div styleName='container__demo__inner'>
-          <h2>Lorem Ipsum</h2>
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eleifend
-          velit id turpis fringilla volutpat. Nulla tristique sem ex, ac dignissim odio
-          volutpat sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eleifend
-          velit id turpis fringilla volutpat. Nulla tristique sem ex, ac dignissim odio
-          volutpat sit amet.
-          </p>
-        </div>
-      </div>
     </div>
   }
 }

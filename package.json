@@ -22,7 +22,7 @@
     "deploy": "npm run build && npm run deploy:s3 && npm run deploy:route53"
   },
   "dependencies": {
-    "esayemm-styles": "^2.2.2",
+    "esayemm-styles": "^3.0.0",
     "history": "^4.6.3",
     "html": "^1.0.0",
     "invariant": "^2.2.2",

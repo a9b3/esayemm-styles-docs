@@ -41,9 +41,9 @@ export default class ColorContainer extends React.Component {
     for (const key in groupedColors) {
       nodes.push(
         <section styleName='colors'>
-          <h4 styleName='colors__header'>
+          <b styleName='colors__header'>
             {key}
-          </h4>
+          </b>
 
           <div styleName='colors__palettes'>
             {this.renderColors(groupedColors[key])}

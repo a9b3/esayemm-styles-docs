@@ -4,6 +4,8 @@
   margin: 0 auto;
   width: 100%;
   padding: $spacing2;
+  max-width: $maxWidth;
+  margin: 0 auto;
 
   &__header {
     margin-bottom: $spacing3;
@@ -19,6 +21,7 @@
 .colors {
   display: flex;
   flex-direction: column;
+  padding: $spacing4;
 
   &__header {
     margin-bottom: $spacing4;
